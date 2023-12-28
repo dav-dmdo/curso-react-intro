@@ -1,27 +1,30 @@
-.ToDoCreator{
-    background-image: linear-gradient(to right, var(--persian-red-500), var(--persian-red-700));
-    box-shadow: 0px 5px 25px var(--persian-red-900);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 50px;
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    font-weight: bold;
-    color: var(--persian-red-50);
-    height: 64px;
-    width: 64px;
+.ToDoCreator {
+  background-image: linear-gradient(
+    to right,
+    var(--persian-red-500),
+    var(--persian-red-700)
+  );
+  box-shadow: 0px 5px 25px var(--persian-red-900);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 50px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-weight: bold;
+  color: var(--persian-red-50);
+  height: 64px;
+  width: 64px;
 
-   
-    transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.ToDoCreator:hover{
-    transform: rotate(180deg);
+.ToDoCreator:hover {
+  transform: rotate(180deg);
 }
 
-.ToDoCreator:active{
-    border: 4px; 
-    border-color: var(--persian-red-900) ;
+.ToDoCreator:active {
+  border: 4px;
+  border-color: var(--persian-red-900);
 }

@@ -1,13 +1,13 @@
-import  {ToDoIcon} from './index.js'
+import { ToDoIcon } from './index.js'
 
-function DeleteIcon({onDelete}){
+function DeleteIcon({ onDelete }) {
     return (
         <ToDoIcon
-            type= 'delete'
-            color = 'gray'
+            type='delete'
+            color='gray'
             onClick={onDelete}
         />
     );
 }
 
-export {DeleteIcon};
+export { DeleteIcon };
