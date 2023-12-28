@@ -3,7 +3,7 @@ import { ToDoContext } from '../ToDoContext';
 import { useContext } from 'react';
 
 function ToDoCreator() {
-    const { searchValue, todos, setTodos } = useContext(ToDoContext);
+    const { searchValue, todos, setTodos, setOpenModal} = useContext(ToDoContext);
     
     const toAddTodo = (text) => {
         if (text) {
@@ -16,7 +16,7 @@ function ToDoCreator() {
     return (
         <button
             className="ToDoCreator"
-            onClick={() => toAddTodo(searchValue)}
+            onClick={() => setOpenModal(state => !state )}
         > + </button>
     );
 }
