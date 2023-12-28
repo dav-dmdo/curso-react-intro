@@ -1,12 +1,12 @@
 import { ToDoIcon } from ".";
 
 
-function CompleteIcon({completed, onComplete}){
-    return(
+function CompleteIcon({ completed, onComplete }) {
+    return (
         <ToDoIcon
-            type= 'check'
-            color = {completed ? 'green':'gray'}
-            onClick = {onComplete}
+            type='check'
+            color={completed ? 'green' : 'gray'}
+            onClick={onComplete}
         />
     );
 }

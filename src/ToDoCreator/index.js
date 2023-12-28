@@ -1,8 +1,10 @@
-import '../styles/ToDoCreator.css'
+import './ToDoCreator.css'
+import { ToDoContext } from '../ToDoContext';
+import { useContext } from 'react';
 
-
-function ToDoCreator({ searchValue, todos, setTodos }) {
-
+function ToDoCreator() {
+    const { searchValue, todos, setTodos } = useContext(ToDoContext);
+    
     const toAddTodo = (text) => {
         if (text) {
             let newTodos = [...todos];
