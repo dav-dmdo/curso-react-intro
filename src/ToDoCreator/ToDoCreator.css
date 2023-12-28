@@ -16,7 +16,7 @@
   color: var(--persian-red-50);
   height: 64px;
   width: 64px;
-
+  z-index: 1;
   transition: 0.3s ease;
 }
 
