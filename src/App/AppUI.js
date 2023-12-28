@@ -6,6 +6,7 @@ import { ToDoCreator } from '../ToDoCreator/index.js';
 import { ToDosLoading } from '../ToDosLoading/index.js';
 import { ToDosError } from '../ToDosError/index.js';
 import { ToDoContext } from '../ToDoContext/index.js';
+import { ToDoForm } from '../ToDoForm/index.js';
 import { Modal } from '../Modal/index.js';
 import { useContext } from 'react';
 
@@ -49,7 +50,7 @@ function AppUI() {
             <ToDoCreator />
             {openModal && (
                 <Modal>
-                    propiedad children de componente modal
+                    <ToDoForm />
                 </Modal>)}
         </>
     );

@@ -43,6 +43,26 @@ function ToDoProvider({ children }) {
         setTodos(newTodos);
     }
 
+    const toAddTodo = (text) => {
+        let flag = false;
+        if (text && !(exists(text))) {
+            let newTodos = [...todos];
+            let newTodo = { text, completed: false };
+            newTodos.unshift(newTodo);
+            setTodos(newTodos);
+            flag= true;
+        }
+        return flag;
+    }
+
+    const exists = (text) =>{
+        for (const todo of todos) {
+            if (todo.text.includes(text)){
+                return true;
+            }
+        }
+        return false;
+    }
 
     return (
         <ToDoContext.Provider value={{loading,
@@ -57,7 +77,8 @@ function ToDoProvider({ children }) {
             todos,
             setTodos,
             openModal,
-            setOpenModal
+            setOpenModal,
+            toAddTodo
         }} >
             {children}
         </ToDoContext.Provider>
